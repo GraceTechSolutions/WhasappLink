@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="main">
-        <input type="text" id="number" placeholder="Enter Whatsapp number" value="+91">
+        <input type="text" id="number" placeholder="Enter Whatsapp NO With Country Code" value="+91">
+        <textarea id="text" rows="10" placeholder="Optional Text"></textarea>
         <input type="button" id="button" value="Send Message">
     </div>
 <script>
     document.getElementById('button').addEventListener('click', ()=>{
         let value = document.getElementById('number').value
-        let link = `https://wa.me/${value}`
+        let text = document.getElementById('text').value
+        let link = `https://wa.me/${value}?text=${text}`
         // console.log(link);
         window.location.replace(link);
     })

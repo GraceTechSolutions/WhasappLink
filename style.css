@@ -11,15 +11,17 @@ body{
  margin-top: 20vh;
  color: white;
 }
-#number, #button{
-    border: 2px solid #2c3e50;
+#number, #button, #text{
+    border: 2px solid #FFF;
     background-color: transparent;
     padding: 10px 25px;
     color: #FFF;
     font-weight: bold;
-    box-shadow: 0 0 30px -10px #FFF;
+    /* box-shadow: 0 0 30px -10px #FFF; */
+    resize: none;
+    text-transform: uppercase;
 }
-#number:active, #number:focus{
+#number:active, #number:focus, #text:active, #text:focus{
     outline: transparent;
 }
 
