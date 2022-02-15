@@ -19,10 +19,12 @@ body{
     font-weight: bold;
     /* box-shadow: 0 0 30px -10px #FFF; */
     resize: none;
-    text-transform: uppercase;
 }
 #number:active, #number:focus, #text:active, #text:focus{
     outline: transparent;
+}
+#number, #button{
+    text-transform: uppercase;
 }
 
 #button{
